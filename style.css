@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.main-container {
+  display: flex;
+}
+.header-container {
+  width: 100vw;
+}
+/* sidebar */
+
+.sidebar {
+  width: 50px;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+.sidebar > button {
+  height: 60px;
+  width: 50px;
+  padding: 5px;
+  border: none;
+  background-color: purple;
+  color: white;
+  font-weight: bolder;
+}
+.sidebar > button :hover {
+  cursor: pointer;
+}
+.sidebar > img {
+  padding-top: 30px;
+  padding-left: 7px;
+  height: 25px;
+  width: 25px;
+}
+.sidebar > img:hover {
+  cursor: pointer;
+}
+
+/* header */
+
+.header {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  margin-left: 50px;
+  position: fixed;
+  justify-content: space-between;
+  background-color: ghostwhite;
+  box-shadow: 2px 2px 2px gainsboro;
+}
+
+.title2 {
+  display: flex;
+  margin-right: 60px;
+}
+.title2 > ul {
+  list-style: none;
+}
+.title2 > ul :nth-child(2) {
+  font-size: small;
+  margin-left: 20px;
+}
+.title2 > img {
+    margin-top: 10px;
+  margin-left: 7px;
+}
+
+/* user-container */
+
+.user-container {
+  margin-left: 80px;
+}
+.search > input {
+  border-radius: 25px;
+  padding: 10px;
+}
+
+/* user-list-table */
+table {
+  border-collapse: collapse;
+  width: 70%;
+}
+th {
+  background-color: darkgray;
+}
+td,
+th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+tr > td:nth-child(3) {
+  text-align: center;
+}
+tr > th:nth-child(3) {
+  width: 200px;
+}
+tr > td > img:hover {
+  cursor: pointer;
+}
+
+/* new-user-entry */
+
+.form-container-1 {
+  display: flex;
+  justify-content: space-between;
+}
+.form-container-1 > .user {
+  width: 55%;
+}
+.user {
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+}
+.check {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+/* profile-picture */
+.profile-picture {
+  margin-right: 80px;
+}
+.profile-picture > img {
+  margin-left: 30px;
+}
+.profile-picture > button {
+  margin-left: 30px;
+  padding: 7px;
+  width: 150px;
+  background-color: whitesmoke;
+  border: none;
+}
+.profile-picture > button:hover {
+  cursor: pointer;
+}
+.form-container-2 >button{
+    padding: 7px;
+    background-color: blueviolet;
+    color: white;
+    width: 150px;
+    margin-right: 40px;
+    border: none;
+    border-radius: 3px;
+}
+.form-container-2>button:nth-child(2){
+    background-color: thistle;
+    color: darkslategrey;
+}

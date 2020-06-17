@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="./style.css" />
+    <!-- fontawesome for search icon as placeholder -->
+    <script src="https://kit.fontawesome.com/9b779f7e2b.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <!-- sidebar -->
+      <div class="sidebar">
+        <button>☰</button>
+        <img src="https://img.icons8.com/android/24/000000/search.png" />
+        <img src="https://img.icons8.com/ios-glyphs/30/000000/home.png" />
+        <img src="https://img.icons8.com/material/48/000000/statistics--v2.png"/>
+        <img src="https://img.icons8.com/ios-glyphs/30/000000/group.png" />
+        <img src="https://img.icons8.com/material/48/000000/gear.png"/>
+      </div>
+
+      <div class="header-container">
+        <!-- header -->
+        <div class="header">
+          <div class="title2">
+            <img width="500px" src="./images/company_logo.png" />
+          </div>
+          <div class="title2">
+            <ul>
+              <li>RENNEE MCKELY</li>
+              <li>Account Settings</li>
+            </ul>
+            <img height="40px" width="40px" src="https://img.icons8.com/windows/64/000000/user.png"/>
+          </div>
+        </div>
+        <div class="user-container">
+          <!-- user search -->
+          <br><br><br>
+          <div class="search">
+            <h2>User List</h2>
+            <input type="text" style="font-family: FontAwesome;" placeholder="&#xf002 Search..." />
+          </div>
+
+          <!-- user list -->
+          <br>
+          <table id="userList">
+              <tr>
+                  <th>Name</th>
+                  <th>Role</th>
+                  <th>Actions</th>
+              </tr>
+              <tr>
+                  <td>vamsi</td>
+                  <td>Admin</td>
+                  <td><img src="https://img.icons8.com/material-rounded/24/000000/edit.png"/></td>
+              </tr>
+              <tr>
+                <td>krishna</td>
+                <td>Developer</td>
+                <td><img src="https://img.icons8.com/material-rounded/24/000000/edit.png"/></td>
+            </tr>
+            <tr>
+                <td>kusu</td>
+                <td>QA</td>
+                <td><img src="https://img.icons8.com/material-rounded/24/000000/edit.png"/></td>
+            </tr>
+            <tr>
+                <td>bhuna</td>
+                <td>Manager</td>
+                <td><img src="https://img.icons8.com/material-rounded/24/000000/edit.png"/></td>
+            </tr>
+          </table>
+
+          <!-- new user entry -->
+          
+              <form class="form">
+                  <div class="form-container-1">
+                    <div class="user">
+                        <h1>New User Details</h1>
+                        <hr>
+                        <br>
+
+                        <input class="user" type="text" id='userName' placeholder="Username" required/>
+                        <input class="user" type="email" id="email" placeholder="Email" required/>
+                        <br>
+                        <input class="user" type="text" id="firstName" placeholder="First Name" required/>
+                        <input class="user" type="text" id="lastName" placeholder="Last Name" required/>
+                        <br>
+                        <select class="user" id="role" required>
+                            <option value="" disabled selected hidden>Role</option>
+                            <option value="Admin">Admin</option>
+                            <option value="Developer">Developer</option>
+                            <option value="QA">QA</option>
+                            <option value="Manager">Manager</option>
+                          </select>
+                        <br>
+                        <input class='check' type="checkbox" checked required/>
+                        <label>send email confirmation</label>
+                      </div>
+
+                    <!-- profile picture -->
+
+                      <div class="profile-picture">
+                        <h1>Profile Picture</h1>
+                        <hr>
+                        <img height="200px" width="150px" id="profileImage" src="https://img.icons8.com/ios/100/000000/image.png"/>
+                        <br>
+                        <button type="button" onclick="document.getElementById('select-image').click()">Select Image</button>
+                        <input type="file" id="select-image" style="display: none;" name="img" accept="image/x-png,image/jpeg" onchange="loadImage(event)" >
+                      
+                    </div>
+                  </div>
+                  <br>
+                  <hr>
+                  <!-- add user entry and cancel user entry -->
+
+                  <div class="form-container-2">
+                        <button type="submit" id="newUser">Add User</button>
+                        <button onclick="cancelUserEntry()">Cancel</button>
+                  </div>
+            </form>
+
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+    <script src="./script.js" type="text/javascript"></script>
+  </body>
+</html>
